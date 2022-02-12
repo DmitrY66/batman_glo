@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Museo Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/MuseoSansCyrl-700.woff") format("woff");
+}
+
 *,
 *::before,
 *::after {
@@ -11,6 +25,28 @@
 html,
 body {
   font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -24,8 +60,11 @@ a {
 }
 
 .header {
-  padding-top: 6.4rem;
+  position: absolute;
   padding-bottom: 6.4rem;
+  left: 50%;
+  top: 6.4rem;
+  transform: translate(-50%, 0);
 }
 
 .header .container {
@@ -45,6 +84,11 @@ a {
   margin-right: 3.9rem;
 }
 
+.header__nav {
+  font-size: 1.4rem;
+  line-height: 114%;
+}
+
 .header__nav a:not(:last-child) {
   margin-right: 2.4rem;
 }
@@ -58,25 +102,80 @@ a {
   margin-right: 2rem;
 }
 
-body {
-  background-image: url("../img/background.jpg");
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  background-size: cover;
+.main {
+  padding-top: 18.7rem;
+  
+}
+
+.main__rating-title {
+  font-size: 1.4rem;
+  line-height: 114%;
+  margin-bottom: 1.6rem;
+  
+}
+
+.main__rating-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.main__rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 0.9rem;
+}
+
+.main__rating-number {
+  font-size: 1.2rem;
+  line-height: 117%;
+}
+
+.main__rating-star {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.main__header {
+  font-family: "Museo Sans";
+  font-size: 7.6rem;
+  line-height: 120%;
+  text-shadow: 0 0 7px black;
+}
+
+.main__description {
+  max-width: 52.8rem;
+  font-size: 1.4rem;
+  line-height: 150%;
+  text-shadow: 0 0 1px black, 0 0 2px black, 0 0 6px black, 0 0 12px black, 2px 2px 33px black;
+  margin-bottom: 4.1rem;
+}
+
+.main__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 114%;
+  max-width: 24.5rem;
+  padding: 2.2rem 7.2rem;
+  background: radial-gradient(#000000, #181818);
+  border-radius: .8rem;
 }
 
 .footer {
   background-color: #030102;
-  color: #fff;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  
 }
 
-.footer .container{
+.footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .footer__menu {
@@ -87,4 +186,16 @@ body {
 
 .footer__menu li {
   list-style: none;
+  font-size: 1.4rem;
+  line-height: 143%;
+}
+
+.footer__menu li a {
+  color: #686767;
+}
+
+.footer_copy {
+  font-size: 1.4rem;
+  line-height: 143%;
+  color: #686767;
 }

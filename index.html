@@ -10,7 +10,11 @@
   <link rel="preload" href="./fonts/MuseoSansCyrl-700.woff" type="font/woff" as="font" crossorigin>
 
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.css">
   <link rel="stylesheet" href="./css/style.css">
+
+  <script defer src="./js/swiper-bundle.js"></script>
+  <script defer src="./js/main.js"></script>
 
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
@@ -76,10 +80,57 @@
       </div>
 
       <h1 class="main__header">Бэтмен</h1>
-      <p class="main__description">
-        После двух лет поисков правосудия на улицах Готэма для своих сограждан Бэтмен становится олицетворением беспощадного возмездия. Когда в городе происходит серия жестоких нападений на представителей элиты, загадочные улики приводят Брюса Уэйна в самые темные закоулки преступного мира. Теперь под прицелом оказывается сам Бэтмен.
-      </p>
+      <div class="main__description-wrap">
+        <p class="main__description">
+          После двух лет поисков правосудия на улицах Готэма для своих сограждан Бэтмен становится олицетворением
+          беспощадного возмездия. Когда в городе происходит серия жестоких нападений на представителей элиты, загадочные
+          улики приводят Брюса Уэйна в самые темные закоулки преступного мира. Теперь под прицелом оказывается сам
+          Бэтмен.
+        </p>
+        <div class="main__button-play">
+          <div class="main__button-dark">
+            <img src="./img/arrow-play.svg" alt="arrow-play">
+          </div>
+        </div>
+      </div>
       <a href="#" class="main__button">Купить билеты</a>
+
+      <div class="main__slider-wrap">
+
+        <div class="main__slider swiper">
+          <div class="swiper-wrapper">
+            <div class="main__slider-slide swiper-slide">
+              <img width="164" height="105" src="./img/slide1.jpg" alt="slide1">
+              <span>Трейлер #1</span>
+            </div>
+            <div class="main__slider-slide swiper-slide">
+              <img width="164" height="105" src="./img/slide2.jpg" alt="slide2">
+              <span>Трейлер #2</span>
+            </div>
+            <div class="main__slider-slide swiper-slide">
+              <img width="164" height="105" src="./img/slide1.jpg" alt="slide1">
+              <span>Трейлер #3</span>
+            </div>
+            <div class="main__slider-slide swiper-slide">
+              <img width="164" height="105" src="./img/slide2.jpg" alt="slide2">
+              <span>Трейлер #4</span>
+            </div>
+            <div class="main__slider-slide swiper-slide">
+              <img width="164" height="105" src="./img/slide1.jpg" alt="slide1">
+              <span>Трейлер #5</span>
+            </div>
+            <div class="main__slider-slide swiper-slide">
+              <img width="164" height="105" src="./img/slide2.jpg" alt="slide2">
+              <span>Трейлер #6</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__slider-arrow">
+          <img src="./img/arrow.svg" alt="arrow">
+        </div>
+
+      </div>
 
     </div>
 

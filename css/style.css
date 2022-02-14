@@ -37,6 +37,11 @@ body {
   background-position-x: center;
   background-position-y: top;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 
 h1,
@@ -55,7 +60,8 @@ a {
 }
 
 .container {
-  width: 1135px;
+  width: 60vw;
+  /* width: 1135px; */
   margin: 0 auto;
 }
 
@@ -100,6 +106,11 @@ a {
 
 .header__social-icon:not(:last-child) {
   margin-right: 2rem;
+}
+
+.header__menu-close,
+.header__menu-burger {
+  display: none;
 }
 
 .main {
@@ -183,6 +194,7 @@ a {
 
 .main__button-dark img {
   margin-left: 1.2rem;
+  width: 4rem;
 }
 
 .main__button {
@@ -208,7 +220,7 @@ a {
 .main__slider-slide {
   position: relative;
   width: 16.4rem;
-  height: 10.5rem;
+  /* height: 10.5rem; */
   border-radius: 0.8rem;
   overflow: hidden;
 }
@@ -221,10 +233,10 @@ a {
   margin-left: 2.8rem;
 }
 
-.main__slider-slide span{
+.main__slider-slide span {
   position: absolute;
   left: 1.2rem;
-  bottom: .6rem;
+  bottom: 0.6rem;
   transform: translate(0, 0);
   font-size: 1rem;
   line-height: 120%;
@@ -240,6 +252,8 @@ a {
   background-color: #030102;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  width: 100%;
+  bottom: 0;
 }
 
 .footer .container {
